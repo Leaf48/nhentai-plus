@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "nhentai+",
+  "description": "nhentaiで日本語バージョンを探しやすくします",
+  "version": "1.0",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://nhentai.net/g/*"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "icons": {
+    "16": "/icons/16.png",
+    "48": "/icons/48.png",
+    "128": "/icons/128.png"
+  }
+}
